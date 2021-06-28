@@ -49,6 +49,8 @@ void BuscarPorNome(Lista* l, char str[])
 		if (!strcmp(str,busca->nome)){
 			printf("nome: %s\ntipo: %s\nvalor: %f\nquantidade:%d\n",busca->nome,busca->tipo,busca->valor,busca->quantidade);
 		}
+		else
+			printf("Não existe esse título!\n");
 	}
 }
 
@@ -60,8 +62,11 @@ void BuscarPorTipo(Lista* l, char str[])
 		if (!strcmp(str,busca->nome)){
 			printf("nome: %s\ntipo: %s\nvalor: %f\nquantidade:%d\n",busca->nome,busca->tipo,busca->valor,busca->quantidade);
 		}
+		else
+			printf("Não existe esse tipo!\n");
 	}
 }
+
 
 int main()
 {
@@ -76,6 +81,7 @@ int main()
 	InserirElemento(l, titulo3, tipo2, val3, qtd3);
 	InserirElemento(l, titulo4, tipo1, val4, qtd4);
 	InserirElemento(l, titulo5, tipo1, val5, qtd5);
+
 
 		printf("Digite 1: Para buscar por nome\n");
 		printf("Digite 2: Para buscar por tipo\n");
