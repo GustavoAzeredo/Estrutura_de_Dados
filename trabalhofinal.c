@@ -1,3 +1,10 @@
+/*INSTITUTO FEDERAL DE EDUCAÇÃO, CIÊNCIAS E TECNOLOGIA DA BAHIA - Campos Salvador.
+Disciplina: INF006 - Estrutura de Dados e Algorítimos
+Aluno: Gustavo Rodrigues de Azeredo Coutinho
+Título: Mercado Simulado - *Itens (a) e (b)
+Link da apresentação no YouTube: https://youtu.be/sH-WA8Edam0*/
+
+
 #include<stdio.h>
 #include<stdlib.h>
 #include<string.h>
@@ -113,6 +120,9 @@ int main()
 	l4->prox = l5;
 	l5->prox = NULL;
 
+		printf("\n");
+		printf("***ESCOLHA O TIPO DE BUSCA***\n");
+		printf("\n");
 		printf("Digite 1: Para buscar por nome\n");
 		printf("Digite 2: Para buscar por tipo\n");
 		printf("\n");
