@@ -69,8 +69,10 @@ int main()
 	Lista *l1 = NULL;
 	Lista *l2 = NULL;
 	Lista *l3 = NULL;
+	Lista *l4 = NULL;
+	Lista *l5 = NULL;
 
-	char n1[6] = "PETR4", n2[6] = "VALE5", n3[6] = "ITSA4";
+	char n1[6] = "PETR4", n2[6] = "VALE5", n3[6] = "ITSA4", n4[6] = "USIM5", n5[6] = "LAME5";
 	char t1[5] = "vend", t2[5] = "comp";
 	char string1[6] = "abcde", string2[5] = "fghi";
 	int tb = 0;
@@ -93,9 +95,23 @@ int main()
 	l3->valor = 26.50;
 	l3->quantidade = 300;
 
+	l4 = (Lista*)malloc(sizeof(Lista));
+	strncpy(l4->nome,n4,5);
+	strncpy(l4->tipo,t1,4);
+	l4->valor = 26.50;
+	l4->quantidade = 300;
+
+	l5 = (Lista*)malloc(sizeof(Lista));
+	strncpy(l5->nome,n5,5);
+	strncpy(l5->tipo,t1,4);
+	l5->valor = 26.50;
+	l5->quantidade = 300;
+
 	l1->prox = l2;
 	l2->prox = l3;
-	l3->prox = NULL;
+	l3->prox = l4;
+	l4->prox = l5;
+	l5->prox = NULL;
 
 		printf("Digite 1: Para buscar por nome\n");
 		printf("Digite 2: Para buscar por tipo\n");
